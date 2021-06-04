@@ -1,3 +1,4 @@
+from calculadora import resta,suma
 def menu():
     num=0
     while num!=3:
@@ -14,7 +15,7 @@ def menu():
             print()
             print("Ingrese un numero: ")
             b=int(input(": "))
-            
+            print("El resultado es: " , (suma(a,b)))
       
         elif num==2:
             print("--Resta--")
@@ -23,4 +24,6 @@ def menu():
             print()
             print("Ingrese un numero: ")
             b=int(input(": "))
+            print("El resultado es: " , (resta(a,b)))
+            
             
